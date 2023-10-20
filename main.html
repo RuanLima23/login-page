@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main-style.css">
+    <title>Perfil do Usuário</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <form id="form" class="form">
+            <div class="header">
+                <h2 class="message">SALVO COM SUCESSO!</h2>
+                <a href="users.html">VER CADASTROS!</a>
+            </div>
+            <div class="form-content">
+                <div id="form-content" class="left">
+                    <label for="">SOBRE MIM</label>
+                    <textarea name="description" id="textarea" cols="10" rows="14"
+                        placeholder="Escreva um pouco sobre você :)"></textarea>
+                    <a class="error-message">message</a>
+                </div>
+                <div id="form-content" class="right">
+                    <div class="imageContent">
+                        <label for="fileInput" class="upload-label">FAZER UPLOAD</label>
+                        <input name="fileInput" type="file" id="fileInput" class="upload">
+                        <br>
+                        <img class="imagem" src="http://via.placeholder.com/350x150" alt="Sua imagem" width="350"
+                            height="150">
+
+                    </div>
+                    <div class="inputContent">
+
+                        <label class="labels">NOME COMPLETO:</label>
+                        <input id="nome" type="text" class="textarea" placeholder="Ex: Lucas Skibao" value="">
+                        <label class="labels">IDADE:</label>
+                        <input id="idade" type="text" class="textarea" placeholder="XX" value="">
+                        <label class="labels">PROFISSÃO:</label>
+                        <input id="profissao" type="text" class="textarea" placeholder="Ex: Engenheiro de Software"
+                            value="">
+
+                        <button id="submit" class="button" type="submit">Salvar</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+<script type="module" src="./main.js"></script>
+
+</html>
